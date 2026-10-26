@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazonair</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/HW.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+  </head>
+  <body>
+    <!-- 漢堡選單 -->
+    <header>
+      <div class="header-container">
+        <button class="menu-btn" type="button">
+          <i class="iconoir-menu"></i>
+        </button>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/logo.png" />
+        </div>
+        <!-- 導覽選單 -->
+        <nav class="nav-bar">
+          <a href="#">準備出發</a>
+          <a href="#">歡迎登機</a>
+          <a href="#">虎迷優惠</a>
+          <a href="#">虎迷須知</a>
+        </nav>
+        <!-- 搜尋、會員 -->
+        <div class="header-actions">
+          <button type="button">
+            <i class="iconoir-search"></i>
+            <span>航班搜尋</span>
+          </button>
+
+          <button type="button">
+            <i class="iconoir-user"></i>
+            <span>登入/註冊</span>
+          </button>
+
+          <button type="button">
+            <i class="iconoir-language"></i>
+            <span>繁中</span>
+          </button>
+
+          <button type="button">
+            <i class="iconoir-dollar-circle"></i>
+            <span>TWD</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 廣告橫幅 -->
+    <div class="banner">
+      <img src="/banner.png" alt="虎航廣告橫幅" />
+    </div>
+
+    <!-- 機票預訂區 -->
+    <main>
+      <div class="booking">
+        <button type="button"><i class="iconoir-airplane"></i>航班</button>
+        <button type="button">
+          <i class="iconoir-mastercard-card"></i>樂虎卡
+        </button>
+        <button type="button"><i class="iconoir-wolf"></i>虎加酒</button>
+        <button type="button"><i class="iconoir-wolf"></i>虎里轉</button>
+      </div>
+
+      <form class="booking-form">
+        <!-- 來回 -->
+        <div class="trip-type">
+          <i class="iconoir-redo"></i>
+          <select>
+            <option value="round-trip">來回</option>
+          </select>
+        </div>
+        <!-- 出發地、目的地 -->
+        <div class="location">
+          <div>
+            <label for="departure">出發地</label>
+            <input id="departure" type="search" />
+          </div>
+          <i class="iconoir-redo-circle"></i>
+          <div>
+            <label for="destination">目的地</label>
+            <input id="destination" type="search" />
+          </div>
+        </div>
+        <!-- 去回程日期 -->
+        <div class="date">
+          <div class="date-item">
+            <div>
+              <span>去程出發日期</span>
+              <p>____/__/__</p>
+            </div>
+            <i class="iconoir-calendar"></i>
+          </div>
+          <i class="iconoir-arrow-right"></i>
+          <div class="date-item">
+            <div>
+              <span>回程出發日期</span>
+              <p>____/__/__</p>
+            </div>
+            <i class="iconoir-calendar"></i>
+          </div>
+        </div>
+        <!-- 旅客人數 -->
+        <div class="passenger-num">
+          <label for="passenger-num">旅客人數</label>
+          <select id="passenger-num">
+            <option>1 成人 - 0 兒童 - 0 嬰兒</option>
+          </select>
+        </div>
+      </form>
+      <div class="booking-bottom">
+        <i class="iconoir-credit-cards"></i>
+        <p>加入促銷代碼</p>
+        <button type="submit" form="booking-form">搜尋</button>
+      </div>
+    </main>
+    <!-- 其他資訊連結區 -->
+    <footer>
+      <a href="#">
+        <img src="/icon_27d4c597ad.png" alt="管理訂單" />
+        <span>管理訂單</span>
+      </a>
+      <a href="#">
+        <img src="/icon_1_4f7736ec26.png" alt="自助報到" />
+        <span>自助報到</span>
+      </a>
+      <a href="#">
+        <img src="/icon_2_e04440f654.png" alt="航班動態" />
+        <span>航班動態</span>
+      </a>
+      <a href="#">
+        <img src="/icon_3_d2b4b08936.png" alt="免稅品購買" />
+        <span>免稅品購買</span>
+      </a>
+      <a href="#">
+        <img src="/icon_4_7401c8ef83.png" alt="常見問題" />
+        <span>常見問題</span>
+      </a>
+    </footer>
+  </body>
+</html>
