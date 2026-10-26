@@ -148,11 +148,14 @@ main {
   max-width: 410px;
   height: 100%;
   position: relative;
+  min-width: 0;
 }
 .location div {
   flex: 1;
   padding: 20px 12px;
   border: 1px solid #cbc9c9;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .location div:first-child {
   border-radius: 4px 0 0 4px;
@@ -172,6 +175,7 @@ main {
   width: 100%;
   border: none;
   outline: none;
+  background: transparent;
 }
 .location .iconoir-redo-circle {
   position: absolute;
@@ -405,6 +409,6 @@ footer span {
     display: none;
   }
   .booking-bottom {
-  margin-top: 20px;
-}
+    margin-top: 20px;
+  }
 }
